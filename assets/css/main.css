@@ -1,0 +1,9 @@
+/* Importer le style du header et du footer*/
+@import "header.css";
+@import "footer.css";
+
+/* Réinitialier les styles par défaut */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
