@@ -1,0 +1,32 @@
+footer {
+  background-color: black;
+}
+
+footer h1,
+p,
+a {
+  color: white;
+  padding: 10px;
+}
+
+footer ul li {
+    margin: 20px;
+}
+
+footer a:hover {
+  background: white;
+  color: black;
+}
+
+.logo-foot img {
+    height: 159px;
+}
+
+
+.dropdown {
+    display: hidden;
+}
+
+.lien-sous-menu:hover .dropdown {
+    display: block;
+}
