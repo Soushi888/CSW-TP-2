@@ -9,7 +9,8 @@ Contributeurs : Sacha Pignot, Xavier Gratton et Vincent LaPointe Lamy.
 
 ## Logo
 
-Auteur : Vincent L.
+Auteur : Vincent L, Sach P. et Xavier G.
+![Logo Luxtic](assets/img/logo-luxtic-v2.png)
 
 ## Header
 
