@@ -11,8 +11,6 @@ Contributeurs : Sacha Pignot, Xavier Gratton et Vincent LaPointe Lamy.
 
 Auteur : Vincent L, Sach P. et Xavier G.
 
-![Logo Luxtic](assets/img/logo-luxtic-v2.png)
-
 ## Header
 
 Auteur : Xavier G.
