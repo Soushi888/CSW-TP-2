@@ -5,12 +5,12 @@ Contributeurs : Sacha Pignot, Xavier Gratton et Vincent LaPointe Lamy.
 
 ## Rapport d'analyse
 
-![Rapport d'analyse](https://docs.google.com/document/d/16RbdnpqnGW5IlZUCs_u6v_nDFxgupDR5H4xrnmWySuY/edit?usp=sharing)
+[Rapport d'analyse](https://docs.google.com/document/d/16RbdnpqnGW5IlZUCs_u6v_nDFxgupDR5H4xrnmWySuY/edit?usp=sharing)
 
 ## Logo
 
 Auteur : Vincent L, Sach P. et Xavier G.
-![Logo Luxtic](assets/img/logo-luxtic-v2.png)
+[Logo Luxtic](assets/img/logo-luxtic-v2.png)
 
 ## Header
 
