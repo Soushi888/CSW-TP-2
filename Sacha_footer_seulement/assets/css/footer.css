@@ -10,13 +10,8 @@ a {
   color: white;
 }
 
-footer h1,
-p {
-  padding: 10px;
-}
-
 footer ul li {
-    margin: 20px;
+  margin: 20px;
 }
 
 footer a:hover {
@@ -31,7 +26,9 @@ footer {
 }
 
 /* Mettre les 3 clolone en flex-column */
-footer .col1, footer .col2, footer .col3 {
+footer .col1,
+footer .col2,
+footer .col3 {
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +37,52 @@ footer .col1 {
   justify-content: space-between;
 }
 
+.logo-foot {
+  margin-left: 0;
+}
+
 .logo-foot img {
-    height: 100px;
-    margin-left: 0;
+  height: 100px;
+  margin-left: 5px;
+}
+
+.col1 p {
+  margin-left: 20px;
+}
+
+footer .col2 {
+  justify-content: space-between;
+}
+
+.google-map {
+  margin-bottom: 20px;
+}
+
+footer .col3 {
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.col3 li {
+  list-style: none;
+}
+
+.social {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social svg {
+  width: 50px;
+  fill: white;
+}
+
+.social a:hover {
+  background: black;
+  color: white;
+}
+
+body * {
+  outline: red dotted 1px;
 }
