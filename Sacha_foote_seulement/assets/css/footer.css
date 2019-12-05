@@ -37,9 +37,10 @@ footer .col1, footer .col2, footer .col3 {
 }
 
 footer .col1 {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo-foot img {
     height: 100px;
+    margin-left: 0;
 }
