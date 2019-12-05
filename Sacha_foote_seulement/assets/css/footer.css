@@ -1,6 +1,7 @@
 /* Mettre le fond noir et le texte blanc */
 footer {
   background-color: black;
+  height: 500px;
 }
 
 footer h1,
@@ -35,6 +36,10 @@ footer .col1, footer .col2, footer .col3 {
   flex-direction: column;
 }
 
+footer .col1 {
+  justify-content: space-around;
+}
+
 .logo-foot img {
-    height: 200px;
+    height: 100px;
 }
