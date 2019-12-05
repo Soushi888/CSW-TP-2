@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Panier</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/css/panier.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Raleway:400,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+      
+        <div style="background-image: url('images/montagne.jpg');"> 
+
+
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Terminez votre réservation</h1>
+              </div>
+              <form>
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="'Cage, Nicolas'"
+                  />
+                  <span class="form-label">Nom et prénom</span>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                      <input class="form-control" type="date" required />
+                      <span class="form-label">Date d'arrivée</span>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="date" required />
+                      <span class="form-label">Date de départ</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                      <select class="form-control" required>
+                        <option value="" selected hidden>Nombres de chambres</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                      <span class="form-label">Chambres</span>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" required>
+                        <option value="" selected hidden>Nombres d'adultes</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        
+                      </select>
+                      <span class="select-arrow"></span>
+                      <span class="form-label">Adultes</span>
+                    </div>
+                    <div class="form-group">
+                      <select class="form-control" required>
+                        <option value="" selected hidden>Nombres d'enfants</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                      <span class="form-label">Enfants</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="email"
+                        placeholder="Votre courriel"
+                      />
+                      <span class="form-label">Courriel</span>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        class="form-control"
+                        type="tel"
+                        placeholder="Numéro de téléphone"
+                      />
+                      <span class="form-label">Téléphone</span>
+                    </div>
+                    <div class="form-group">
+                            <input
+                              class="form-control"
+                              placeholder="Carte de credit"
+                            />
+                            <span class="form-label">Credit</span>
+                            <img src="images/pay.png">
+                          </div>
+                    <div class="form-header">
+                            <h2>Prix total :<br>1234.56$</h2>
+                          </div>
+                </div>
+                <div class="form-btn">
+                  <button class="submit-btn">Réservez maintenant</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
