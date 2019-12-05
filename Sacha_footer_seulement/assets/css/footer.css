@@ -74,6 +74,10 @@ footer .col3 {
   height: 300px;
 }
 
+.carte-site a {
+  display: inline-block;
+}
+
 .social {
   margin-bottom: 20px;
   display: flex;
