@@ -1,0 +1,452 @@
+/*body *>*{
+    outline: dotted red 2px ;
+}*/
+html {
+    background-color: #eae7e6;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+a:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*-------font paragraphe section haut et bas-------*/
+.haut div p,
+.bas div p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/*-------HOVER--------------*/
+/*---boutton reserver ------*/
+.reserver > a:hover {
+    background-color: white;
+    color: #ff8846;
+    transition: all 0.4s ease 0s;
+}
+
+/*-----menu déroulant------*/
+nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover sur les éléments de liste sauf le dernier*/
+nav li:nth-of-type(1):hover {
+    border-bottom: solid white 7px;
+    transition: all 0.4s ease 0s;
+}
+
+nav li:nth-of-type(2):hover {
+    border-bottom: solid white 7px;
+    transition: all 0.4s ease 0s;
+}
+
+nav li:nth-of-type(3):hover {
+    border-bottom: solid white 7px;
+    transition: all 0.4s ease 0s;
+}
+
+nav li:nth-of-type(4):hover {
+    border-bottom: solid white 7px;
+    transition: all 0.4s ease 0s;
+}
+
+/*-----sur image------*/
+.mainConteneur img:hover {
+    box-shadow: .5px .5px 30px .1px #ff8846;
+    transition: all 0.4s ease 0s;
+}
+
+/*-----boutton en savoir plus------*/
+.boutton:hover {
+    color: #ff8846;
+    background: white;
+    border-color: #f6b93b;
+    transition: all 0.4s ease 0s;
+}
+/*------- navigation--------*/
+body > header > section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    background: linear-gradient(black, transparent);
+}
+
+.reserver > a {
+    background-color: #ff8846;
+    color: white;
+    border-radius: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 0;
+    transition: all 0.4s ease 0s;
+}
+
+nav > aside {
+    font-size: .8em;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+nav > aside > a {
+    padding-left: 10px
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    align-self: flex-start;
+    justify-content: flex-end;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin-top: 44px;
+    padding-right: 20px;
+    flex-grow: 1;
+    
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    
+
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    
+}
+
+nav ul li {
+    position: relative;
+    
+}
+
+.DropMenu ul {
+    display: none;
+    position: absolute;
+    text-align: left;
+}
+
+.DropMenu ul li {
+    margin-left: -60px;
+    padding-top: 20px;
+}
+
+/*-------flèche menu déroulant------*/
+i {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 6px;
+}
+
+.arrow {
+    transform: rotate(45deg);
+    float: right;
+
+}
+
+
+
+/*------------ header-------------*/
+.logo {
+    height: 100px;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+header {
+    height: 800px;
+    background-image: url(../images/montagne.jpg);
+    background-position: center;
+    text-align: center;
+}
+
+/*---------text sur image principale-----------*/
+
+.slogan {
+    color: white;
+    opacity: 1;
+    font-size: 3em;
+    text-shadow: 3px 3px 10px rgb(42, 42, 42);
+    margin-top: 420px;
+
+
+}
+
+/*-------------main----------------*/
+/*---------------section haut-------------------*/
+.mainConteneur h1 {
+    color: white;
+    font-size: 2em;
+    border-bottom: solid white;
+}
+
+.mainConteneur p {
+    color: white;
+}
+
+body main {
+    width: 100%;
+    background: #1c1e1f;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+
+}
+
+.mainConteneur {
+
+    margin: auto;
+    margin-top: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #817e7e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.mainConteneur img {
+    height: 370px;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+    /*box-shadow: .5px .5px 10px .1px #ff8846;*/
+}
+
+
+.haut {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.haut article {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    padding-bottom: 80px;
+
+}
+
+.haut article:nth-last-of-type(1) {
+    flex-direction: row-reverse;
+    border-bottom: solid white;
+}
+
+.haut div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.boutton {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background: #ff8846;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+}
+
+
+.suitesText {
+    padding-left: 40px;
+}
+
+.piscineText {
+    padding-right: 40px;
+}
+
+/*---------section bas--------------*/
+.titreBas {
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.titreBas h1 {
+    font-size: 3em;
+    text-shadow: 3px 3px 10px rgb(42, 42, 42);
+    border-bottom: none;
+}
+
+.bas {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+
+}
+
+.bas article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.bas article:nth-last-of-type(2) {
+    padding-right: 20px
+}
+
+.bas article:nth-last-of-type(1) {
+    padding-left: 20px;
+}
+
+.bas div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------footer---------*/
+/* Mettre le fond noir et le texte blanc */
+footer {
+    background-color: #1c1e1f;
+    height: 450px;
+    border-top: solid white 1px;
+}
+
+footer h1,
+footer p,
+footer a {
+    color: white;
+}
+
+footer ul li {
+    margin: 20px;
+}
+
+footer a:hover {
+    background: white;
+    color: black;
+}
+
+/* Mettre le footer en mode flex */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    /* flex-wrap: wrap; */
+}
+
+/* Mettre les 3 clolone en flex-column */
+footer .col1,
+footer .col2,
+footer .col3 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col1 {
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.logo-foot {
+    margin-left: 0;
+}
+
+.logo-foot img {
+    height: 100px;
+    margin-left: 5px;
+}
+
+
+footer .col2 {
+    justify-content: space-between;
+}
+
+.google-map {
+    margin-bottom: 20px;
+    width: 350px;
+    height: 350px;
+}
+
+footer .col3 {
+    justify-content: space-between;
+    margin-right: 35px;
+}
+
+.col3 li {
+    list-style: none;
+}
+
+.carte-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.carte-site a {
+    display: inline-block;
+}
+
+.social {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social svg {
+    width: 30px;
+    fill: white;
+    padding: 5px;
+}
+
+.social path:hover {
+    background: white;
+    color: black;
+}
