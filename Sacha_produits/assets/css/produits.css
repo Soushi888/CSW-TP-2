@@ -3,7 +3,7 @@ body * > * {
 }
 
 html {
-  background-color: #eae7e6;
+  background-color: #6791c2;
 }
 
 body {
@@ -189,8 +189,7 @@ header {
 .slidershow {
   position: relative;
   height: 368px;
-  margin: -500px 80px 112px 80px;
-  /* background: cadetblue; */
+  margin: -550px 80px 112px 80px;
   border-radius: 5px;
   border: black 3px solid;
 }
@@ -303,21 +302,24 @@ header {
   }
 }
 
-/*  */
-main > section {
+/* Forfaits */
+main {
   background: #1c1e1f;
-  padding: 0px 80px;
+  padding: 0px 80px 80px 80px;
+}
+
+main > section {
+  background: #817e7e;
+  border-radius: 5px 5px 0 0;
+  padding: 80px 0;
 }
 
 .forfaits > article {
-  background: #817e7e;
-  border-radius: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   flex-basis: 100%;
-  padding-bottom: 80px;
 }
 
 article > .forfaitTexte {
