@@ -4,14 +4,22 @@ body {
   margin: auto;
 }
 
+/*-------------footer---------*/
+/* Mettre le fond noir et le texte blanc */
 footer {
-  background-color: black;
+  background-color: #1c1e1f;
   height: 450px;
+  /* border-top: solid white 1px; */
+}
+
+footer a {
+  width: max-content;
+  padding-right: 5px;
 }
 
 footer h1,
-p,
-a {
+footer p,
+footer a {
   color: white;
 }
 
@@ -28,6 +36,7 @@ footer a:hover {
 footer {
   display: flex;
   justify-content: space-between;
+  flex-basis: 100%;
   /* flex-wrap: wrap; */
 }
 
@@ -41,6 +50,7 @@ footer .col3 {
 
 footer .col1 {
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .logo-foot {
@@ -52,9 +62,6 @@ footer .col1 {
   margin-left: 5px;
 }
 
-.col1 p {
-  margin-left: 20px;
-}
 
 footer .col2 {
   justify-content: space-between;
@@ -68,7 +75,7 @@ footer .col2 {
 
 footer .col3 {
   justify-content: space-between;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 
 .col3 li {
@@ -84,6 +91,14 @@ footer .col3 {
 
 .carte-site a {
   display: inline-block;
+}
+
+.social a:visited {
+  color: white;
+}
+
+.social a:visited:hover {
+  color: black;
 }
 
 .social {
@@ -102,8 +117,4 @@ footer .col3 {
 .social path:hover {
   background: white;
   color: black;
-}
-
-body * {
-  outline: red dotted 1px;
 }
