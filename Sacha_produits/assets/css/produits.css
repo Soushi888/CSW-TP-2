@@ -193,7 +193,42 @@ header {
     text-align: center;
 }
 
-/*---------text sur image principale-----------*/
+/*---------main-----------*/
+
+.slidershow {
+    height: 368px;
+    margin: -500px 80px 112px 80px;
+    background: cadetblue;
+}
+
+main > section {
+    background: #1c1e1f;
+    padding: 0px 80px;
+}
+
+section > article {
+    background: #817e7e;
+    margin-top: -60px;
+}
+
+.forfaits > article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    padding-bottom: 80px;
+}
+
+article > .forfaitTexte {
+    flex-basis: 50%;
+}
+
+.forfaits img {
+    width: 420px;
+    height: 372px;
+}
+
 
 
 /*-------------footer---------*/
