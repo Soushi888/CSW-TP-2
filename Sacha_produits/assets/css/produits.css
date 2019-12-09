@@ -199,6 +199,7 @@ header {
     height: 368px;
     margin: -500px 80px 112px 80px;
     background: cadetblue;
+    border-radius: 5px;
 }
 
 main > section {
@@ -206,12 +207,9 @@ main > section {
     padding: 0px 80px;
 }
 
-section > article {
-    background: #817e7e;
-    margin-top: -60px;
-}
-
 .forfaits > article{
+    background: #817e7e;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -224,9 +222,23 @@ article > .forfaitTexte {
     flex-basis: 50%;
 }
 
+.forfaitTexte p {
+    width: 75%;
+}
+
+.forfait2, .forfait4 {
+    text-align: right;
+    justify-content: right;
+}
+
 .forfaits img {
     width: 420px;
     height: 372px;
+}
+
+.forfaits img:hover {
+    box-shadow: .5px .5px 30px .1px #ff8846;
+    transition: all 0.4s ease 0s;
 }
 
 
@@ -236,7 +248,12 @@ article > .forfaitTexte {
 footer {
     background-color: #1c1e1f;
     height: 450px;
-    border-top: solid white 1px;
+    /* border-top: solid white 1px; */
+}
+
+footer a {
+    width: max-content;
+    padding-right: 5px;
 }
 
 footer h1,
