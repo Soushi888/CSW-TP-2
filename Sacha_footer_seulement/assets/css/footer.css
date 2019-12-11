@@ -1,3 +1,7 @@
+/* body * {
+  outline: red dotted 1px;
+} */
+
 /* Mettre le fond noir et le texte blanc */
 body {
   max-width: 1280px;
@@ -9,12 +13,13 @@ body {
 footer {
   background-color: #1c1e1f;
   height: 450px;
-  /* border-top: solid white 1px; */
+  border-top: solid white 1px;
 }
 
 footer a {
   width: max-content;
   padding-right: 5px;
+  transition: all 0.4s ease 0s;
 }
 
 footer h1,
@@ -36,8 +41,6 @@ footer a:hover {
 footer {
   display: flex;
   justify-content: space-between;
-  flex-basis: 100%;
-  /* flex-wrap: wrap; */
 }
 
 /* Mettre les 3 clolone en flex-column */
@@ -62,20 +65,20 @@ footer .col1 {
   margin-left: 5px;
 }
 
-
-footer .col2 {
-  justify-content: space-between;
-}
-
 .google-map {
   margin-bottom: 20px;
   width: 350px;
   height: 350px;
+  transition: all 0.4s ease 0s;
+}
+
+.google-map:hover {
+  box-shadow: 0.5px 0.5px 15px 0.1px #ff8846;
 }
 
 footer .col3 {
   justify-content: space-between;
-  margin-right: 35px;
+  margin-right: 20px;
 }
 
 .col3 li {
@@ -117,4 +120,34 @@ footer .col3 {
 .social path:hover {
   background: white;
   color: black;
+}
+
+@media screen and (max-width: 854px) {
+  .carte-site,
+  .social {
+    display: none;
+  }
+
+  .social {
+    position: absolute;
+    left: 20px;
+    top: 340px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  footer {
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col1 p {
+    margin-bottom: -750px;
+  }
+
+.col2 {
+  margin-top: 50px;
+}
+
 }
