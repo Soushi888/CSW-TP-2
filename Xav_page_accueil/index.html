@@ -14,7 +14,18 @@
     <!-- font-family: 'Montserrat', sans-serif; text courant
     font-family: 'Raleway', sans-serif; titre, nav-->
 
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("monMenuMobile").style.width = "350px";
+        }
 
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("monMenuMobile").style.width = "0";
+        }
+
+    </script>
 </head>
 
 <body>
@@ -44,49 +55,66 @@
                 </ul>
 
             </nav>
-
+            <div id="monMenuMobile" class="menuMobile">
+                <a href="javascript:void(0)" class="fermerBtn" onclick="closeNav()">&times;</a>
+                <a href="#">Réserver</a>
+                <a href="#">Nos hôtels</a>
+                <a href="#">Suites</a>
+                <a href="#">Forfaits</a>
+                <a href="#">Mariages</a>
+                <a href="#">Réunions</a>
+                
+            </div>
+            <div class="hamBtnConteneur">
+            <button class="mobileBtn" onclick="openNav()">&#9776;</button>
+            </div>
         </section>
-        <h1 class="slogan">-Votre Luxueuse Évasion-</h1>
+        <div class="slogan">
+        <h1>-Votre Luxueuse Évasion-</h1>
+        </div>
     </header>
 
     <main>
         <div class="mainConteneur">
             <section class="haut">
                 <article>
-                    <a href="#"><img src="assets/images/chambre7_resize.jpg" alt="Chambre"></a>
-                    <div class="suitesText">
-                        <h1><a href="#">-Nos Suites-</a></h1>
-                        <p>Lorem ipsum dolor sit amet, tristique et egestas quis ipsum suspendisse.</p><p> Ac felis donec et odio pellentesque diam. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Quam quisque id diam vel quam elementum.</p>
-                        <div><a class="boutton" href="lien" target="_blank" rel="nofollow noopener">En Savoir Plus</a></div>
+                    <a href="#"><img src="assets/images/forfait_resize.jpg" alt="Forfait"></a>
+                    <div class="forfaitText">
+                        <h1><a href="#">Nos Forfaits</a></h1>
+                        <p>Lorem ipsum dolor sit amet, tristique et egestas quis ipsum suspendisse.</p>
+                        <p> Ac felis donec et odio pellentesque diam. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Quam quisque id diam vel quam elementum.</p>
+                        <div><a class="boutton" href="lien" target="_blank">En Savoir Plus</a></div>
                     </div>
                 </article>
                 <article>
-                    <a href="#"><img src="assets/images/piscine_resize.jpg" alt="Piscine"></a>
-                    <div class="piscineText">
-                        <h1><a href="#">-Notre Somptueuse Piscine-</a></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p> Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Quam quisque id diam vel quam elementum.</p>
-                        <div><a class="boutton" href="lien" target="_blank" rel="nofollow noopener">En Savoir Plus</a></div>
+                    <a href="#"><img src="assets/images/spa_resize.jpg" alt="Spa"></a>
+                    <div class="spaText">
+                        <h1><a href="#">Détente Nature</a></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p> Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Quam quisque id diam vel quam elementum.</p>
+                        <div><a class="boutton" href="lien" target="_blank">En Savoir Plus</a></div>
                     </div>
                 </article>
             </section>
             <div class="titreBas">
-            <h1>-Profitez de nos Incontournables-</h1>
+                <h1>-Profitez de nos Incontournables-</h1>
             </div>
             <section class="bas">
                 <article>
                     <a href="#"><img src="assets/images/verre_vin_resize.jpg" alt="Restaurant"></a>
                     <div>
-                        <h1><a href="#">-Découvrez le Bistro L-</a></h1>
+                        <h1><a href="#">Le Bistro L</a></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p>Congue eu consequat ac felis donec et odio. Scelerisque fermentum dui faucibus in ornare quam viverra.</p>
                     </div>
                 </article>
-                
+
                 <article>
-                    <a href="#"><img src="assets/images/spa_resize.jpg" alt="Spa"></a>
+                    <a href="#"><img src="assets/images/piscine_resize.jpg" alt="Piscine"></a>
                     <div>
-                        <h1><a href="#">-Détente Nature-</a></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p> <p>Proin libero nunc consequat interdum varius sit amet. Volutpat diam ut venenatis tellus.</p>
+                        <h1><a href="#">Notre Piscine</a></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                        <p>Proin libero nunc consequat interdum varius sit amet. Volutpat diam ut venenatis tellus.</p>
                     </div>
                 </article>
             </section>

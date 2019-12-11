@@ -1,11 +1,13 @@
-/*body *>*{
-    outline: dotted red 2px ;
+/* body>* {
+    outline: red dotted 1px;
+}
 }*/
 html {
-    background-color: #eae7e6;
+    background-color: #7e9aa8;
 }
 
 body {
+
     max-width: 1280px;
     margin: auto;
     display: flex;
@@ -46,27 +48,28 @@ h1 {
 nav ul li:hover ul {
     display: flex;
     flex-direction: column;
+    transition: all 0.4s ease 0s;
 }
 
 /* Hover sur les éléments de liste sauf le dernier*/
 nav li:nth-of-type(1):hover {
     border-bottom: solid white 7px;
-    transition: all 0.4s ease 0s;
+
 }
 
 nav li:nth-of-type(2):hover {
     border-bottom: solid white 7px;
-    transition: all 0.4s ease 0s;
+
 }
 
 nav li:nth-of-type(3):hover {
     border-bottom: solid white 7px;
-    transition: all 0.4s ease 0s;
+
 }
 
 nav li:nth-of-type(4):hover {
     border-bottom: solid white 7px;
-    transition: all 0.4s ease 0s;
+
 }
 
 /*-----sur image------*/
@@ -82,7 +85,17 @@ nav li:nth-of-type(4):hover {
     border-color: #f6b93b;
     transition: all 0.4s ease 0s;
 }
+
 /*------- navigation--------*/
+/*caché le menu mobile quand la res est au dessus de 1048px*/
+.menuMobile {
+    display: none;
+}
+
+.mobileBtn {
+    display: none;
+}
+
 body > header > section {
     display: flex;
     flex-wrap: wrap;
@@ -122,7 +135,7 @@ nav {
     margin-top: 44px;
     padding-right: 20px;
     flex-grow: 1;
-    
+
 }
 
 nav li {
@@ -130,21 +143,22 @@ nav li {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
+    ;
     padding-bottom: 5px;
-    
-
 }
+
+nav li:nth-of-type(1) {}
 
 nav a {
     color: white;
     font-size: 1.2em;
     text-decoration: none;
-    
+
 }
 
 nav ul li {
     position: relative;
-    
+
 }
 
 .DropMenu ul {
@@ -189,18 +203,16 @@ header {
     background-image: url(../images/montagne.jpg);
     background-position: center;
     text-align: center;
+    flex-grow: 1;
 }
 
 /*---------text sur image principale-----------*/
 
 .slogan {
+    position: relative;
     color: white;
-    opacity: 1;
-    font-size: 3em;
-    text-shadow: 3px 3px 10px rgb(42, 42, 42);
-    margin-top: 420px;
-
-
+    font-size: 1.5em;
+    text-shadow: 3px 4px 4px rgb(42, 42, 42);
 }
 
 /*-------------main----------------*/
@@ -239,7 +251,7 @@ body main {
 }
 
 .mainConteneur img {
-    height: 370px;
+    height: 380px;
     border-radius: 5px;
     transition: all 0.4s ease 0s;
     /*box-shadow: .5px .5px 10px .1px #ff8846;*/
@@ -267,7 +279,7 @@ body main {
 .haut div {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: baseline;
     justify-content: center;
     box-sizing: border-box;
 }
@@ -284,11 +296,11 @@ body main {
 }
 
 
-.suitesText {
+.forfaitText {
     padding-left: 40px;
 }
 
-.piscineText {
+.spaText {
     padding-right: 40px;
 }
 
@@ -310,6 +322,7 @@ body main {
     display: flex;
     flex-wrap: wrap;
     padding-top: 80px;
+    justify-content: space-between;
 
 }
 
@@ -317,17 +330,17 @@ body main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-basis: 50%;
+    flex-basis: calc(50% - 20px);
     box-sizing: border-box;
+
 }
 
-.bas article:nth-last-of-type(2) {
-    padding-right: 20px
+article div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.bas article:nth-last-of-type(1) {
-    padding-left: 20px;
-}
 
 .bas div {
     display: flex;
@@ -338,16 +351,6 @@ body main {
     padding-left: 40px;
     padding-right: 40px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*-------------footer---------*/
 /* Mettre le fond noir et le texte blanc */
@@ -449,4 +452,258 @@ footer .col3 {
 .social path:hover {
     background: white;
     color: black;
+}
+
+/*------------Média Query-----------------*/
+@media screen and (max-width: 1300px) {
+    header {
+        height: 700px;
+    }
+
+    .mainConteneur h1 {
+        font-size: 1.7em;
+    }
+
+    .haut img,
+    .bas img {
+        height: 340px;
+    }
+
+    .bas {
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+
+    .haut img,
+    .bas img {
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 1160px) {
+    header {
+        height: 650px;
+    }
+
+    .logo {
+        height: 90px;
+        margin-top: 45px;
+    }
+
+    nav li {
+        padding-left: 15px;
+        padding-right: 15px;
+        ;
+        padding-bottom: 5px;
+    }
+
+    .haut img,
+    .bas img {
+        height: 280px;
+    }
+
+
+}
+
+@media screen and (max-width: 1125px) {
+
+    nav li {
+        padding-left: 10px;
+        padding-right: 10px;
+        ;
+        padding-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 1086px) {
+
+    .haut img,
+    .bas img {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+
+    .mainConteneur h1 {
+        font-size: 1.5em;
+    }
+
+    .haut img,
+    .bas img {
+        height: 260px;
+    }
+
+
+
+    nav ul {
+        display: none;
+
+    }
+
+    nav aside {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    /* Le menu mobile */
+    .menuMobile {
+        display: grid;
+        /* Pour que le menu mobile prenne tout la hauteur */
+        height: 100%;
+        width: 0;
+        /* 0 width - changer avec JavaScript */
+        position: absolute;
+        margin-left: auto;
+        /*le menu mobile reste en place*/
+        position: fixed;
+        /*le menu mobile est bien au dessus de tout*/
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #1c1e1f;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+
+    }
+
+    /* Item du menu mobile */
+    .menuMobile a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* Underline sous les éléments du menu mobile */
+    .menuMobile a:hover {
+        text-decoration: underline;
+    }
+
+    .menuMobile a:nth-of-type(1):hover {
+        text-decoration: none;
+    }
+
+    /* Position et style du bouton fermer le menu mobile */
+    .menuMobile .fermerBtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    /* Style du bouton hamburger */
+    .hamBtnConteneur {
+        position: relative;
+        padding-right: 40px;
+        margin-top: -110px;
+        margin-left: auto;
+    }
+
+    .mobileBtn {
+        font-size: 40px;
+        cursor: pointer;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: contents;
+    }
+
+    .mobileBtn:hover {
+        background-color: #444;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .bas img {
+        height: 200px;
+    }
+
+    .bas {
+        justify-content: center;
+        text-align: center;
+
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .bas img {
+        height: 260px;
+    }
+
+    .slogan {
+        font-size: 1.2em
+    }
+
+    .haut {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .haut article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+
+    }
+
+
+    .haut div {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .bas {
+        justify-content: center;
+    }
+
+    .bas div {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .bas article:nth-last-of-type(1) {
+        padding-left: 0px;
+        padding-top: 80px
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .haut img,
+    .bas img {
+        height: 180px;
+    }
+
+    .mainConteneur div {
+        padding: 0px;
+    }
 }
