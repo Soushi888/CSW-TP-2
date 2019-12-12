@@ -13,8 +13,19 @@
 
     <!-- font-family: 'Montserrat', sans-serif; text courant
     font-family: 'Raleway', sans-serif; titre, nav-->
-    
 
+    <script>
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("monMenuMobile").style.width = "350px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("monMenuMobile").style.width = "0";
+        }
+
+    </script>
 </head>
 
 <body>
@@ -22,7 +33,7 @@
     <header>
         <section>
 
-            <img class="logo" src="images/Logo-Luxtic-v2.png" alt="Logo">
+            <a href="#"><img class="logo" src="images/Logo-Luxtic-v3.png" alt="Logo"></a>
 
             <nav>
                 <aside>
@@ -35,7 +46,7 @@
                     <li><a href="#">Suites</a></li>
                     <li><a href="#">Forfaits et promotions</a></li>
                     <li class="DropMenu"><a href="#">Planifiez un Évenement</a>
-                       <i class="arrow"></i>
+                        <i class="arrow"></i>
                         <ul>
                             <li><a href="#">Mariages</a></li>
                             <li><a href="#">Réunions d'affaires</a></li>
@@ -44,7 +55,19 @@
                 </ul>
 
             </nav>
+            <div id="monMenuMobile" class="menuMobile">
+                <a href="javascript:void(0)" class="fermerBtn" onclick="closeNav()">&times;</a>
+                <a href="#">Réserver</a>
+                <a href="#">Nos hôtels</a>
+                <a href="#">Suites</a>
+                <a href="#">Forfaits</a>
+                <a href="#">Mariages</a>
+                <a href="#">Réunions</a>
 
+            </div>
+            <div class="hamBtnConteneur">
+                <button class="mobileBtn" onclick="openNav()">&#9776;</button>
+            </div>
         </section>
     </header>
 
