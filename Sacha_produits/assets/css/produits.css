@@ -130,11 +130,19 @@ main > section {
 }
 
 article > .forfaitTexte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 50%;
+  padding-bottom: 20px;
 }
 
 .forfaitTexte p {
-  width: 75%;
+  width: 100%;
+}
+
+.forfaits .reserver a {
+  font-size: 1.5rem;
 }
 
 .forfait2,
@@ -143,8 +151,14 @@ article > .forfaitTexte {
   justify-content: right;
 }
 
+.forfait2 .forfaitTexte ,
+.forfait4 .forfaitTexte {
+  align-items: flex-end;
+}
+
 .forfaits img {
   width: 420px;
+  border-radius: 5px ;
   height: 372px;
 }
 

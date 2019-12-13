@@ -34,6 +34,11 @@ nav li:nth-of-type(4):hover {
 
 }
 
+/* Page active */
+.navactive {
+    border-bottom: solid white 7px;
+}
+
 /*------- navigation--------*/
 /*caché le menu mobile quand la res est au dessus de 1048px*/
 .menuMobile {
