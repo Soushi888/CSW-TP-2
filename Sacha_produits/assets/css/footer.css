@@ -1,20 +1,10 @@
-/* body * {
-  outline: red dotted 1px;
-} */
-body {
-  max-width: 1280px;
-  margin: auto;
-}
-
-/* Mettre le fond noir et le texte blanc */
-
-
 /*-------------footer---------*/
 /* Mettre le fond noir et le texte blanc */
 footer {
   background-color: #1c1e1f;
   height: 450px;
   border-top: solid white 1px;
+  flex-basis: 100%;
 }
 
 footer a {
