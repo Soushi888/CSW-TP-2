@@ -118,7 +118,7 @@ main {
 main > section {
   background: #817e7e;
   border-radius: 5px 5px 0 0;
-  padding: 80px 0;
+  padding: 80px 0 auto 0;
 }
 
 .forfaits > article {
@@ -127,26 +127,33 @@ main > section {
   flex-wrap: wrap;
   justify-content: center;
   flex-basis: 100%;
+  padding-bottom: 80px;
 }
 
 article > .forfaitTexte {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-basis: 50%;
-  padding-bottom: 80px;
+  flex-basis: 45%;
+}
+
+.forfaitTexte h2 {
+  align-self: center;
 }
 
 .forfaitTexte p {
-  width: 100%;
+  width: 75%;
 }
 
 .forfaits .prix {
   font-size: 2rem;
+  align-self: center;
+  width: max-content;
 }
+
 
 .forfaits .reserver {
   margin-top: -2.5%;
+  align-self: center;
 }
 
 .forfaits .reserver a {
@@ -159,23 +166,60 @@ article > .forfaitTexte {
   justify-content: right;
 }
 
-.forfait2 .forfaitTexte ,
+.forfait2 .forfaitTexte,
 .forfait4 .forfaitTexte {
   align-items: flex-end;
 }
 
-.forfait2 .reserver,
-.forfait4 .reserver {
-  align-self: center;
+.forfaits figure {
+  display: flex;
+  align-items: center;
 }
 
 .forfaits img {
-  width: 420px;
-  border-radius: 5px ;
+  width: 506px;
+  border-radius: 5px;
   height: 380px;
+  transition: all 0.4s ease 0s;
 }
 
 .forfaits img:hover {
   box-shadow: 0.5px 0.5px 30px 0.1px #ff8846;
   transition: all 0.4s ease 0s;
+}
+
+@media screen and (max-width: 1300px) {
+  .slidershow {
+    margin: -450px 80px 50px 80px;
+  }
+
+  @media screen and (max-width: 1225px) {
+    figure {
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 1086px) {
+    .forfaits img {
+      height: 270px;
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 1048px) {
+    h2 {
+      font-size: 1.5em;
+    }
+    .forfaits img {
+      height: 260px;
+      width: 390px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .forfaits img {
+      height: 180px;
+      width: 240px;
+    }
+  }
 }

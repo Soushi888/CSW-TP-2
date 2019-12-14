@@ -7,8 +7,9 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
-p, h2 {
+p, h2, a {
     color: white;   
+    font-family: 'Montserrat', sans-serif;
 }
 
 h2 {

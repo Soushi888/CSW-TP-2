@@ -91,6 +91,10 @@ nav {
 
 }
 
+nav ul {
+    padding-left: 0;
+}
+
 nav li {
     list-style: none;
     display: inline-block;
