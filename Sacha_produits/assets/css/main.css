@@ -3,9 +3,9 @@
 @import "produits.css";
 @import "footer.css";
 
-*, *>*, *::before, *::after {
+/* *, *>*, *::before, *::after {
     outline: red 1px dotted;
-}
+} */
 
 html {
     background-color: #7e9aa8;
@@ -17,3 +17,4 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  

@@ -111,7 +111,7 @@
 
 /* Forfaits */
 main {
-  background: #1c1e1f;
+  background: #414141;
   padding: 0px 80px 80px 80px;
 }
 
@@ -132,13 +132,21 @@ main > section {
 article > .forfaitTexte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   flex-basis: 50%;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 
 .forfaitTexte p {
   width: 100%;
+}
+
+.forfaits .prix {
+  font-size: 2rem;
+}
+
+.forfaits .reserver {
+  margin-top: -2.5%;
 }
 
 .forfaits .reserver a {
@@ -156,10 +164,15 @@ article > .forfaitTexte {
   align-items: flex-end;
 }
 
+.forfait2 .reserver,
+.forfait4 .reserver {
+  align-self: center;
+}
+
 .forfaits img {
   width: 420px;
   border-radius: 5px ;
-  height: 372px;
+  height: 380px;
 }
 
 .forfaits img:hover {
