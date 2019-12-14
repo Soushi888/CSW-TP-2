@@ -43,6 +43,7 @@ footer .col3 {
 footer .col1 {
   justify-content: space-between;
   margin-left: 20px;
+  width: max-content;
 }
 
 .logo-foot {

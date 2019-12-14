@@ -134,41 +134,25 @@ article > .forfaitTexte {
   display: flex;
   flex-direction: column;
   flex-basis: 45%;
-}
-
-.forfaitTexte h2 {
-  align-self: center;
+  align-items: center;
 }
 
 .forfaitTexte p {
   width: 75%;
+  text-align: center;
 }
 
 .forfaits .prix {
   font-size: 2rem;
-  align-self: center;
   width: max-content;
 }
 
-
 .forfaits .reserver {
   margin-top: -2.5%;
-  align-self: center;
 }
 
 .forfaits .reserver a {
   font-size: 1.5rem;
-}
-
-.forfait2,
-.forfait4 {
-  text-align: right;
-  justify-content: right;
-}
-
-.forfait2 .forfaitTexte,
-.forfait4 .forfaitTexte {
-  align-items: flex-end;
 }
 
 .forfaits figure {
@@ -202,7 +186,7 @@ article > .forfaitTexte {
   @media screen and (max-width: 1086px) {
     .forfaits img {
       height: 270px;
-      width: auto;
+      width: 405px;
     }
   }
 
@@ -215,6 +199,11 @@ article > .forfaitTexte {
       width: 390px;
     }
   }
+
+  @media screen and (max-width: 900px) { 
+
+  }
+
 
   @media screen and (max-width: 600px) {
     .forfaits img {
