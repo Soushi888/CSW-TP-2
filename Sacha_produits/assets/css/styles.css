@@ -4,7 +4,11 @@ a {
 }
 
 h1 {
+    padding-top: 20px;
+    font-size: 2em;
     font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
 }
 
 p, h2, a {

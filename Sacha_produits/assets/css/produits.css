@@ -113,12 +113,17 @@
 main {
   background: #414141;
   padding: 0px 80px 80px 80px;
+  transition: all 0.4s ease 0s;
 }
 
 main > section {
   background: #817e7e;
   border-radius: 5px 5px 0 0;
-  padding: 80px 0 auto 0;
+}
+
+.forfaits .forfait2,
+.forfaits .forfait4 {
+  flex-direction: row-reverse;
 }
 
 .forfaits > article {
@@ -191,7 +196,19 @@ article > .forfaitTexte {
   }
 
   @media screen and (max-width: 1048px) {
-    h2 {
+    main > section {
+      margin-top: -60px;
+    }
+
+    .forfaits h1 {
+      transform: translateY(-400px);
+    }
+
+    .forfaits article {
+      margin-top: -80px;
+    }
+
+    .forfaits h2 {
       font-size: 1.5em;
     }
     .slidershow {
@@ -203,15 +220,49 @@ article > .forfaitTexte {
     }
   }
 
-  @media screen and (max-width: 900px) { 
+  @media screen and (max-width: 900px) {
+    .forfaits article {
+      flex-direction: column;
+    }
 
+    .forfaits figure {
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .forfaits .forfait2,
+    .forfaits .forfait4 {
+      flex-direction: column;
+    }
   }
-
 
   @media screen and (max-width: 600px) {
     .forfaits img {
       height: 180px;
       width: 240px;
+    }
+
+    .forfaits h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 518px) {
+    .forfaits h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 472px) {
+    .forfaits .reserver a {
+      padding: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 472px) {
+    main {
+      padding: 0px;
     }
   }
 }
