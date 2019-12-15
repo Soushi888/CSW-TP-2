@@ -3,102 +3,120 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Panier</title>
+  <meta name="Auteurs" content="Vincent LaPointe Lamy, Xavier Gratton, Sacha Pignot ">
+  <meta name="description" content="Page panier du site de l'hôtel Luxtic">
+  <title>Panier de l'hôtel Luxtic</title>
   <link rel="stylesheet" href="assets/css/panier.css" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Raleway:400,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
+    <!-- font-family: 'Montserrat', sans-serif; text courant
+    font-family: 'Raleway', sans-serif; titre, nav-->
+
+    <script>
+      /* Set the width of the sidebar to 250px (show it) */
+      function openNav() {
+          document.getElementById("monMenuMobile").style.width = "350px";
+      }
+
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+          document.getElementById("monMenuMobile").style.width = "0";
+      }
+
+  </script>
+  
 </head>
 
 <body>
 
-  <div style="background-image: url('assets/img/montagne.jpg');">
+  
+
+  <!div style="background-image: url('assets/img/montagne.jpg');">
 
 
     <div id="booking" class="section">
-      <div class="section-center">
+      
         <div class="container">
-          <div class="row">
             <div class="booking-form">
               <div class="form-header">
-                <h1>Chambre #4321<br>Réservation</h1>
+                <h1>Chambre #123<br>Facture de réservation</h1>
               </div>
-              <form>
-                <div class="form-group">
-                  <input class="form-control" type="text" placeholder="'Cage, Nicolas'" />
-                  <span class="form-label">Nom et prénom</span>
-                </div>
-                <div class="row">
-                  <div class="form-group">
-                    <input class="form-control" type="date" required />
-                    <span class="form-label">Date d'arrivée</span>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" type="date" required />
-                    <span class="form-label">Date de départ</span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group">
-                    <select class="form-control" required>
-                      <option value="" selected hidden>Nombres de chambres</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                    </select>
-                    <span class="select-arrow"></span>
-                    <span class="form-label">Chambres</span>
-                  </div>
-                  <div class="form-group">
-                    <select class="form-control" required>
-                      <option value="" selected hidden>Nombres d'adultes</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
 
-                    </select>
-                    <span class="select-arrow"></span>
-                    <span class="form-label">Adultes</span>
-                  </div>
-                  <div class="form-group">
-                    <select class="form-control" required>
-                      <option value="" selected hidden>Nombres d'enfants</option>
-                      <option>0</option>
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
-                    <span class="select-arrow"></span>
-                    <span class="form-label">Enfants</span>
-                  </div>
+              <form class="panier" >
+                <div class="form-group" >
+                  <input class="form-control" type="text" placeholder="Nom, Prénom" />
+                  <span class="form-label">Nom et Prénom</span>
                 </div>
-                <div class="row">
-                  <div class="form-group">
-                    <input class="form-control" type="email" placeholder="Votre courriel" />
+                
+                <div class="form-group" >
+                  <input class="form-control" type="date" required />
+                  <span class="form-label">Date d'arrivée</span>
+                </div>
+                
+                <div class="form-group" >
+                  <input class="form-control" type="date" required />
+                  <span class="form-label">Date de départ</span>
+                </div> 
+                
+                <div class="form-group" >
+                    <input class="form-control" type="email" placeholder="Courriel" />
                     <span class="form-label">Courriel</span>
                   </div>
-                  <div class="form-group">
-                    <input class="form-control" type="tel" placeholder="Numéro de téléphone" />
+                  
+                <div class="form-group" >
+                    <input class="form-control" type="tel" placeholder="Téléphone" />
                     <span class="form-label">Téléphone</span>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" placeholder="Carte de credit" />
-                    <span class="form-label">Credit</span>
-                    <img src="assets/img/pay.png">
-                  </div>
-                  <div class="form-header">
-                    <h2>Prix total :<br>1234.56$</h2>
-                  </div>
+                  </div>   
+
+                <div class="form-group" >
+                  <select class="form-control" required>
+                    <option value="" selected hidden>Enfants?</option>
+                    <option>------Oui------</option>
+                    <option>------Non------</option>
+                  </select>
+                  <span class="form-label">Enfants</span>
                 </div>
-                <div class="form-btn">
-                  <button class="submit-btn">Réservez maintenant</button>
-                </div>
+   
+                
+                <div class="form-group" >
+                    <input class="form-control" placeholder="Numero de Carte" />
+                    <span class="form-label">Credit numero</span>
+                  </div>
+
+                  <div class="form-group" >
+                      <input class="form-control" placeholder="Date de carte" />
+                      <span class="form-label">Credit date</span>
+                    </div>
+
+                <div class="form-group" >
+                    <select class="form-control" required>
+                      <option value="" selected hidden>Payement</option>
+                      <option>Visa</option>
+                      <option>Mastercard</option>
+                      <option>American Exp.</option>
+                      <option>Nicolas Cage</option>
+                    </select>
+                    <span class="form-label">Carte</span>
+                  </div>
+
+                  
               </form>
+
+              <div class="form-footer">
+                <h2><br> total  :  <em>543.21$</em></h2>
+              </div>
+
+              <div class="form-btn">
+                <button class="submit-btn">Completer la reservation</button>
+              </div>                
+            
+
             </div>
-          </div>
         </div>
-      </div>
+      
     </div>
 </body>
 
