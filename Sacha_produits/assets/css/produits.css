@@ -20,6 +20,7 @@
 
 .slides img {
   height: 368px;
+  transition: 1s all;
 }
 /* Next & previous buttons */
 .precedent,
@@ -51,16 +52,22 @@
 }
 
 /* Caption text */
+.caption-container {
+  display: flex;
+  justify-content: center;
+}
+
 .caption {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  margin-left: 45%;
+  /* margin-left: 43.2%; */
   width: max-content;
   background: #d85a16;
 }
+
 
 /* The dots/bullets/indicators */
 .points {
@@ -180,12 +187,6 @@ article > .forfaitTexte {
 @media screen and (max-width: 1201px) {
   .nav {
     padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 1160px) {
-  .slidershow {
-    /* margin: -420px 0 0 0; */
   }
 }
 
