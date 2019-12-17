@@ -91,10 +91,6 @@ nav {
 
 }
 
-nav ul {
-    padding-left: 0;
-}
-
 nav li {
     list-style: none;
     display: inline-block;
@@ -160,14 +156,11 @@ header {
 }
 /*------media query affectant la nav et header------------*/
 @media screen and (max-width: 1300px) {
-    header {
-        height: 700px;
-    }
 }
     
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1161px) {
     header {
-        height: 650px;
+        /* height: 650px; */
     }
 
     .logo {
