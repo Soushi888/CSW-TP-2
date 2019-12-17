@@ -167,4 +167,8 @@ footer .col3 {
   .col2 h1 {
     text-align: start;
   }
+
+  .col2 h1, p, a {
+    margin-left: 20px;
+  }
 }
