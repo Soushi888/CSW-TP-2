@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
     <!-- font-family: 'Montserrat', sans-serif; text courant
     font-family: 'Raleway', sans-serif; titre, nav-->
-    <script src="assets/js/nav.js"></script>
-    <script src="assets/js/slidershow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Jquery -->
+    <script src="assets/js/nav.js"></script> <!-- Menu Hamburger -->
+    <script src="assets/js/slidershow.js"></script> <!-- Slider -->
+    <script src="assets/js/matcheMedia.js"></script> <!-- Javascript Adaptatif (changement des éléments dans le DOM) -->
 </head>
 
 <body>
@@ -61,20 +63,26 @@
 
         <div class="slidershow">
             <!-- Images à afficher -->
-            <figure class="slides fade">
-                <img src="assets/img/suite1_2.jpg" style="width:100%">
-                <div class="caption-container"><figcaption class="caption">Chambre avec vue sur la montagne</figcaption></div>
+            <figure class="slides">
+                <img class="fade" src="assets/img/suite1_2.jpg" style="width:100%">
+                <div class="caption-container">
+                    <figcaption class="caption">Chambre avec vue sur la montagne</figcaption>
+                </div>
             </figure>
 
-            <figure class="slides fade">
-                <img src="assets/img/suite2_5.jpg" style="width:100%">
-                <div class="caption-container"><figcaption class="caption">Loft Mezzanine</figcaption></div>
+            <figure class="slides">
+                <img class="fade" src="assets/img/suite2_5.jpg" style="width:100%">
+                <div class="caption-container">
+                    <figcaption class="caption">Loft Mezzanine</figcaption>
+                </div>
             </figure>
 
-            <figure class="slides fade">
-                <img src="assets/img/suite3_5.jpg" style="width:100%">
-                <div class="caption-container"><figcaption class="caption">Balcon avec vue sur la montagne
-                </figcaption></div>
+            <figure class="slides">
+                <img class="fade" src="assets/img/suite3_5.jpg" style="width:100%">
+                <div class="caption-container">
+                    <figcaption class="caption">Balcon avec vue sur la montagne
+                    </figcaption>
+                </div>
                 <!-- <figcaption class="caption-prix">300$ par nuit</figcaption> -->
 
             </figure>

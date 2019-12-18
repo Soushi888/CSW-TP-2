@@ -9,11 +9,12 @@
   border: black 3px solid;
 }
 
-/* Hide the images by default */
+/* Cache les images du slider par défaut */
 .slides {
   display: none;
 }
 
+/* Sauf la première */
 .slides:nth-of-type(1) {
   display: contents;
 }
@@ -22,7 +23,7 @@
   height: 368px;
   transition: 1s all;
 }
-/* Next & previous buttons */
+/* Bouttons précédent et suivant */
 .precedent,
 .suivant {
   cursor: pointer;
@@ -39,19 +40,19 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Positionne le boutton suivant sur la droite */
 .suivant {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Sur le hover, ajoute un background noir avec un peu de transparence */
 .precedent:hover,
 .suivant:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
+/* Texte du caption */
 .caption-container {
   display: flex;
   justify-content: center;
@@ -69,7 +70,7 @@
 }
 
 
-/* The dots/bullets/indicators */
+/* Style des points du slider */
 .points {
   text-align: center;
 }
@@ -90,7 +91,7 @@
   background-color: #1c1e1f;
 }
 
-/* Fading animation */
+/* animation de type "fading" sur les images su slider */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -235,13 +236,8 @@ article > .forfaitTexte {
 
     .forfaits figure {
       justify-content: center;
-      margin-top: 40px;
     }
 
-    .forfaits .forfait2,
-    .forfaits .forfait4 {
-      flex-direction: column;
-    }
   }
 
   @media screen and (max-width: 600px) {
