@@ -244,7 +244,7 @@ body main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #817e7e;
+    background-color: #414141;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 40px;
@@ -264,6 +264,7 @@ body main {
 }
 
 .haut article {
+    
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
@@ -352,18 +353,28 @@ article div {
     padding-right: 40px;
 }
 
+
+
 /*-------------footer---------*/
 /* Mettre le fond noir et le texte blanc */
 footer {
+    flex-basis: 100%;
     background-color: #1c1e1f;
     height: 450px;
     border-top: solid white 1px;
+}
+
+footer a {
+    width: max-content;
+    padding-right: 5px;
+    transition: all 0.4s ease 0s;
 }
 
 footer h1,
 footer p,
 footer a {
     color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
 footer ul li {
@@ -379,8 +390,6 @@ footer a:hover {
 footer {
     display: flex;
     justify-content: space-between;
-    flex-basis: 100%;
-    /* flex-wrap: wrap; */
 }
 
 /* Mettre les 3 clolone en flex-column */
@@ -405,20 +414,20 @@ footer .col1 {
     margin-left: 5px;
 }
 
-
-footer .col2 {
-    justify-content: space-between;
-}
-
 .google-map {
     margin-bottom: 20px;
     width: 350px;
     height: 350px;
+    transition: all 0.4s ease 0s;
+}
+
+.google-map:hover {
+    box-shadow: 0.5px 0.5px 15px 0.1px #ff8846;
 }
 
 footer .col3 {
     justify-content: space-between;
-    margin-right: 35px;
+    margin-right: 20px;
 }
 
 .col3 li {
@@ -434,6 +443,14 @@ footer .col3 {
 
 .carte-site a {
     display: inline-block;
+}
+
+.social a:visited {
+    color: white;
+}
+
+.social a:visited:hover {
+    color: black;
 }
 
 .social {
@@ -468,7 +485,7 @@ footer .col3 {
     .bas img {
         height: 340px;
     }
-
+    
     .bas {
         justify-content: space-between;
         text-align: center;
@@ -500,7 +517,7 @@ footer .col3 {
         ;
         padding-bottom: 5px;
     }
-
+   
     .haut img,
     .bas img {
         height: 280px;
@@ -706,4 +723,37 @@ footer .col3 {
     .mainConteneur div {
         padding: 0px;
     }
+}
+
+/*-------query footer-------------*/
+
+@media screen and (max-width: 854px) {
+
+    .carte-site,
+    .social {
+        display: none;
+    }
+
+    .social {
+        position: absolute;
+        left: 20px;
+        top: 340px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    footer {
+        height: 800px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col1 p {
+        margin-bottom: -750px;
+    }
+
+    .col2 {
+        margin-top: 50px;
+    }
+
 }
