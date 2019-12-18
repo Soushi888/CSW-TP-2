@@ -883,7 +883,4 @@ footer .col3 {
     display: grid;
     grid-template-columns: 180px 180px 150px;
     grid-gap: 10px;
-  /*   text-align: center;
-   */
   }
-  
