@@ -1,0 +1,328 @@
+/*-------font paragraphe section haut et bas-------*/
+.haut div p,
+.bas div p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/*-----sur image------*/
+.mainConteneur img:hover {
+    box-shadow: .5px .5px 30px .1px #ff8846;
+    transition: all 0.4s ease 0s;
+}
+
+/*-----boutton en savoir plus------*/
+.boutton:hover {
+    color: #ff8846;
+    background: white;
+    border-color: #f6b93b;
+    transition: all 0.4s ease 0s;
+}
+
+
+
+/*---------text sur image principale-----------*/
+
+.slogan {
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 3px 4px 4px rgb(42, 42, 42);
+}
+
+/*-------------main----------------*/
+/*---------------section haut-------------------*/
+.mainConteneur h1 {
+    color: white;
+    font-size: 2em;
+    border-bottom: solid white;
+}
+
+.mainConteneur p {
+    color: white;
+}
+
+body main {
+    width: 100%;
+    background: #1c1e1f;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+
+}
+
+.mainConteneur {
+
+    margin: auto;
+    margin-top: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #414141;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.mainConteneur img {
+    height: 380px;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+    /*box-shadow: .5px .5px 10px .1px #ff8846;*/
+}
+
+
+.haut {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.haut article {
+    
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    padding-bottom: 80px;
+
+}
+
+.haut article:nth-last-of-type(1) {
+    flex-direction: row-reverse;
+    border-bottom: solid white;
+}
+
+.haut div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.boutton {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background: #ff8846;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+}
+
+
+.forfaitText {
+    padding-left: 40px;
+}
+
+.spaText {
+    padding-right: 40px;
+}
+
+/*---------section bas--------------*/
+.titreBas {
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.titreBas h1 {
+    font-size: 3em;
+    text-shadow: 3px 3px 10px rgb(42, 42, 42);
+    border-bottom: none;
+}
+
+.bas {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    justify-content: space-between;
+
+}
+
+.bas article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: calc(50% - 20px);
+    box-sizing: border-box;
+
+}
+
+article div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.bas div {
+    height: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/*------------Média Query-----------------*/
+@media screen and (max-width: 1300px) {
+    header {
+        height: 700px;
+    }
+
+    .mainConteneur h1 {
+        font-size: 1.7em;
+    }
+
+    .haut img,
+    .bas img {
+        height: 340px;
+    }
+    
+    .bas {
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+
+    .haut img,
+    .bas img {
+        height: 320px;
+    }
+
+}
+@media screen and (max-width: 1160px) { 
+    .bas div {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    .logo {
+        height: 90px;
+        margin-top: 45px;
+    }
+
+    .haut img,
+    .bas img {
+        height: 280px;
+    }
+}
+
+
+@media screen and (max-width: 1086px) {
+
+    .haut img,
+    .bas img {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+
+    .mainConteneur h1 {
+        font-size: 1.5em;
+    }
+
+    .haut img,
+    .bas img {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .bas img {
+        height: 200px;
+    }
+
+    .bas {
+        justify-content: center;
+        text-align: center;
+
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .bas img {
+        height: 260px;
+    }
+
+    .slogan {
+        font-size: 1.2em
+    }
+
+    .haut {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .haut article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+
+    }
+
+
+    .haut div {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .bas {
+        justify-content: center;
+    }
+
+    .bas div {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .bas article:nth-last-of-type(1) {
+        padding-left: 0px;
+        padding-top: 80px
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .haut img,
+    .bas img {
+        height: 180px;
+    }
+
+    .mainConteneur div {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body main {
+        padding: 0;
+    }
+}

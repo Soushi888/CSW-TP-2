@@ -1,0 +1,18 @@
+@import "header.css";
+@import "footer.css";
+@import "forfaits.css";
+@import "panier.css";
+@import "accueil.css";
+@import "styles.css";
+
+html {
+    background-color: #7e9aa8;
+  }
+  
+body {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
